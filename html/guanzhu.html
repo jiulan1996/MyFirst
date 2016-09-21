@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../img/favicon.ico"/>
+    <title>我关注的人</title>
+    <link rel="stylesheet" href="../css/guanzhu.css"/>
+    <script type="text/javascript" src="../js/guanzhu.js"></script>
+</head>
+<body>
+<header>
+    <div class="top">
+        <a class="logo"><img src="../img/logo.png" alt="堆糖"/></a>
+        <div class="nav">
+            <span>分类<i></i></span>
+            <div class="child_nav">
+                <div class="child">
+                    <div class="left">
+                        <p><a href="#">首页</a></p>
+                        <p><a href="#">热门</a></p>
+                        <p><a href="#">良品购</a></p>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="#">家居生活</a>　<em>|</em>　<a href="#">美食菜谱</a>　<em>|</em>　<a href="#">手工DIY</a></li>
+                            <li class="bt_line"><a href="#">时尚搭配</a>　<em>|</em>　<a href="#">美妆造型</a>　<em>|</em>　<a href="#">婚纱婚礼</a></li>
+                            <li class="bt_line"><a href="#">设计</a>　<em>|</em>　<a href="#">古风</a>　<em>|</em>　<a href="#">插画绘画</a></li>
+                            <li class="bt_line"><a href="#">壁纸</a>　<em>|</em>　<a href="#">头像</a>　<em>|</em>　<a href="#">文字句子</a></li>
+                            <li class="bt_line"><a href="#">旅行</a>　<em>|</em>　<a href="#">摄影</a>　<em>|</em>　<a href="#">人文艺术</a></li>
+                            <li class="bt_line"><a href="#">影音书</a>　<em>|</em>　<a href="#">人物明星</a>　<em>|</em>　<a href="#">动画漫画</a></li>
+                            <li class="bt_line"><a href="#">植物多肉</a>　<em>|</em>　<a href="#">生活百科</a>　<em>|</em>　<a href="#">植物萌宠</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <form action="#">
+                <input type="text" class="sousuo" id="sousuo" placeholder="搜索感兴趣的内容" autocomplete="off"/>
+                <input type="button" class="submit"/>
+            </form>
+            <div class="list" id="list">
+                <p>搜索含<span></span>的内容</p>
+                <p>搜索含<span></span>的商品</p>
+                <p>搜索含<span></span>的专辑</p>
+                <p>搜索含<span></span>的糖人</p>
+            </div>
+        </div>
+        <div class="top_right">
+            <div class="jia">
+                <div class="span" id="jia">
+                    <span></span>
+                    <div class="tool" id="tool">
+                        <a href="javascript:void(0)" class="p1" onclick="upImg()"><i></i>上传图片</a>
+                        <a href="#" class="p2"><i></i>抓取网页图片</a>
+                        <a href="javascript:void(0)" class="p3" onclick="Create()"><i></i>创建专辑</a>
+                    </div>
+                </div>
+                <em>|</em>
+            </div>
+            <div class="home">
+                <a href="liveHome.html">堆糖生活家</a><span>new</span>
+                <em>|</em>
+            </div>
+            <div class="active"><a href="#">关注动态</a><em>|</em></div>
+            <div class="message"><a href="#">消息</a><span>5</span><em>|</em></div>
+            <div class="my">
+                <div id="my">
+                    <a href="myHomePage.html">
+                        <img src="../img/star.jpeg" alt=""/>
+                        <span>我的堆糖</span>
+                        <i></i>
+                    </a>
+                    <div class="myHome" id="myHome">
+                        <a href="myHomePage.html" class="a1"><i></i>个人主页</a>
+                        <a href="#" class="a2"><i></i>账号设置</a>
+                        <div class="tuichu"><a href="#" class="a3"><i></i>退出</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <p class="link"><a href="myHomePage.html">我的堆糖</a><span>&nbsp;>&nbsp;我关注的人</span></p>
+    <div class="guanzhu">
+        <p class="title">我的关注</p>
+        <ul class="ul">
+            <li>
+                <a href="#" class="touxiang"><img src="../img/myHome_guanzhu/guanzhu_1.jpeg" alt=""/></a>
+                <a href="#" class="name">萌宠公社</a>
+                <div class="yes"></div>
+            </li>
+            <li>
+                <a href="#" class="touxiang"><img src="../img/myHome_guanzhu/guanzhu_2.jpeg" alt=""/></a>
+                <a href="#" class="name">壁纸头像精选</a>
+                <div class="yes"></div>
+            </li>
+            <li>
+                <a href="#" class="touxiang"><img src="../img/myHome_guanzhu/guanzhu_3.jpeg" alt=""/></a>
+                <a href="#" class="name">美发美甲前沿</a>
+                <div class="yes"></div>
+            </li>
+            <li>
+                <a href="#" class="touxiang"><img src="../img/myHome_guanzhu/guanzhu_4.jpeg" alt=""/></a>
+                <a href="#" class="name">每天看点好书好电影</a>
+                <div class="yes"></div>
+            </li>
+            <li>
+                <a href="#" class="touxiang"><img src="../img/myHome_guanzhu/guanzhu_5.jpeg" alt=""/></a>
+                <a href="#" class="name">吃货美食情报所</a>
+                <div class="yes"></div>
+            </li>
+            <li>
+                <a href="#" class="touxiang"><img src="../img/myHome_guanzhu/guanzhu_6.gif" alt=""/></a>
+                <a href="#" class="name">乐活风</a>
+                <div class="yes"></div>
+            </li>
+            <li>
+                <a href="#" class="touxiang"><img src="../img/myHome_guanzhu/guanzhu_7.jpeg" alt=""/></a>
+                <a href="#" class="name">环球旅行风景</a>
+                <div class="yes"></div>
+            </li>
+            <li>
+                <a href="#" class="touxiang"><img src="../img/myHome_guanzhu/guanzhu_8.jpeg" alt=""/></a>
+                <a href="#" class="name">手工diy</a>
+                <div class="yes"></div>
+            </li>
+            <li>
+                <a href="#" class="touxiang"><img src="../img/myHome_guanzhu/guanzhu_9.jpeg" alt=""/></a>
+                <a href="#" class="name">女人装</a>
+                <div class="yes"></div>
+            </li>
+            <li>
+                <a href="#" class="touxiang"><img src="../img/myHome_guanzhu/guanzhu_10.jpeg" alt=""/></a>
+                <a href="#" class="name">做个美人吧</a>
+                <div class="yes"></div>
+            </li>
+        </ul>
+       <!-- <ul class="ul2">
+            <li>
+                <a href="#" class="touxiang"><img src="../img/myHome_guanzhu/guanzhu_11.jpeg" alt=""/></a>
+                <a href="#" class="name">家居生活宝典（海外）</a>
+                <div class="yes"></div>
+            </li>
+            <li>
+                <a href="#" class="touxiang"><img src="../img/myHome_guanzhu/guanzhu_11.jpeg" alt=""/></a>
+                <a href="#" class="name">画报速递</a>
+                <div class="yes"></div>
+            </li>
+            <li>
+                <a href="#" class="touxiang"><img src="../img/myHome_guanzhu/guanzhu_11.jpeg" alt=""/></a>
+                <a href="#" class="name">duitang</a>
+                <div class="yes"></div>
+            </li>
+        </ul>-->
+        <div class="page">
+            <ul>
+                <li><span class="dangqian">1</span></li>
+                <li><span class="moren">2</span></li>
+                <li><a href="javascript:void(0)"></a></li>
+                <li>13条 /<span>2</span>页</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

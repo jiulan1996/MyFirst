@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../img/favicon.ico"/>
+    <title>玖兰爱的堆糖个人主页－堆糖，美好生活研究所</title>
+    <link rel="stylesheet" href="../css/myHomePage.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <script type="text/javascript" src="../js/myHomePage.js"></script>
+    <script type="text/javascript" src="../js/input_search.js"></script>
+    <script type="text/javascript" src="../js/header_kuang.js"></script>
+    <script type="text/javascript" src="../js/修改封面.js"></script>
+</head>
+<body>
+    <header>
+    <div class="top">
+        <a class="logo"><img src="../img/logo.png" alt="堆糖"/></a>
+        <div class="nav">
+            <span>分类<i></i></span>
+            <div class="child_nav">
+                <div class="child">
+                    <div class="left">
+                        <p><a href="#">首页</a></p>
+                        <p><a href="#">热门</a></p>
+                        <p><a href="#">良品购</a></p>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="#">家居生活</a>　<em>|</em>　<a href="#">美食菜谱</a>　<em>|</em>　<a href="#">手工DIY</a></li>
+                            <li class="bt_line"><a href="#">时尚搭配</a>　<em>|</em>　<a href="#">美妆造型</a>　<em>|</em>　<a href="#">婚纱婚礼</a></li>
+                            <li class="bt_line"><a href="#">设计</a>　<em>|</em>　<a href="#">古风</a>　<em>|</em>　<a href="#">插画绘画</a></li>
+                            <li class="bt_line"><a href="#">壁纸</a>　<em>|</em>　<a href="#">头像</a>　<em>|</em>　<a href="#">文字句子</a></li>
+                            <li class="bt_line"><a href="#">旅行</a>　<em>|</em>　<a href="#">摄影</a>　<em>|</em>　<a href="#">人文艺术</a></li>
+                            <li class="bt_line"><a href="#">影音书</a>　<em>|</em>　<a href="#">人物明星</a>　<em>|</em>　<a href="#">动画漫画</a></li>
+                            <li class="bt_line"><a href="#">植物多肉</a>　<em>|</em>　<a href="#">生活百科</a>　<em>|</em>　<a href="#">植物萌宠</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <form action="#">
+                <input type="text" class="sousuo" id="sousuo" placeholder="搜索感兴趣的内容" autocomplete="off"/>
+                <input type="button" class="submit"/>
+            </form>
+            <div class="list" id="list">
+                <p>搜索含<span></span>的内容</p>
+                <p>搜索含<span></span>的商品</p>
+                <p>搜索含<span></span>的专辑</p>
+                <p>搜索含<span></span>的糖人</p>
+            </div>
+        </div>
+        <div class="top_right">
+            <div class="jia">
+                <div class="span" id="jia">
+                    <span></span>
+                    <div class="tool" id="tool">
+                        <a href="javascript:void(0)" class="p1" onclick="upImg()"><i></i>上传图片</a>
+                        <a href="#" class="p2"><i></i>抓取网页图片</a>
+                        <a href="javascript:void(0)" class="p3" onclick="Create()"><i></i>创建专辑</a>
+                    </div>
+                </div>
+            </div>
+            <em>|</em>
+            <div class="home">
+                <a href="liveHome.html">堆糖生活家</a><span>new</span>
+            </div>
+            <em>|</em>
+            <div class="active"><a href="#">关注动态</a></div>
+            <em>|</em>
+            <div class="message"><a href="#">消息</a><span>5</span></div>
+            <em>|</em>
+            <div class="my">
+                <div id="my">
+                    <a href="myHomePage.html">
+                        <img src="../img/star.jpeg" alt=""/>
+                        <span>我的堆糖</span>
+                        <i></i>
+                    </a>
+                    <div class="myHome" id="myHome">
+                        <a href="myHomePage.html" class="a1"><i></i>个人主页</a>
+                        <a href="#" class="a2"><i></i>账号设置</a>
+                        <div class="tuichu"><a href="#" class="a3"><i></i>退出</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <section>
+        <div class="top">
+            <div class="left">
+                <canvas class="canvas_1" id="canvas_1"></canvas>
+                <div class="discript">
+                    <a href="#" class="touxiang"><img src="../img/touxiang.jpeg" alt=""/></a>
+                    <a href="#" class="name">玖兰爱</a>
+                    <p>★ 2</p>
+                    <a href="#" class="bianji"><i></i>编辑</a>
+                </div>
+            </div>
+            <div class="right" id="right">
+                <img src="../img/myHomePage_bg.jpeg" alt="" id="bg_img"/>
+                <div id="tuodong"></div>
+            </div>
+            <a href="#" id="xiugai">修改封面</a>
+            <form action="#" method="get" id="form">
+                <input type="file" id="file"/>
+            </form>
+        </div>
+        <div class="section_1">
+            <div class="list" id="select">
+                <ul>
+                    <li class="click"><a href="javascript:void(0)">专辑&nbsp;2</a></li>
+                    <li class="click"><a href="javascript:void(0)">收藏&nbsp;1</a></li>
+                    <li class="click"><a href="javascript:void(0)">收集&nbsp;314</a></li>
+                    <li class="click"><a href="javascript:void(0)">发布&nbsp;2</a></li>
+                    <li><a href="guanzhu.html">关注&nbsp;13</a></li>
+                    <li><a href="#">粉丝&nbsp;2</a></li>
+                </ul>
+                <div class="bottom" id="bottom" style="left: 337px"></div>
+            </div>
+            <div class="shezhi" id="shezhi">
+                <form action="#" method="get">
+                    <input type="range" min="1.0" max="2.0" step="0.01" value="1.0" class="range" id="range"/>
+                    <input type="button" class="button button_1" id="button_1" value="取消"/>
+                    <input type="button" class="button button_2" id="button_2" value="确定"/>
+                </form>
+            </div>
+        </div>
+        <iframe src="iframe_1.html" frameborder="0" id="iframe"></iframe>
+    </section>
+</body>
+</html>
