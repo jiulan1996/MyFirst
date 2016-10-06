@@ -6,10 +6,8 @@
     <title>玖兰爱的堆糖个人主页－堆糖，美好生活研究所</title>
     <link rel="stylesheet" href="../css/myHomePage.css"/>
     <link rel="stylesheet" href="../css/header.css"/>
-    <script type="text/javascript" src="../js/myHomePage.js"></script>
-    <script type="text/javascript" src="../js/input_search.js"></script>
-    <script type="text/javascript" src="../js/header_kuang.js"></script>
-    <script type="text/javascript" src="../js/修改封面.js"></script>
+    <link rel="stylesheet" href="../css/paging.css"/>
+    <script type="text/javascript" data-main="../js/MyHome/zoom.js" src="../js/JQuery/require.js" defer async="true" ></script>
 </head>
 <body>
     <header>
@@ -88,7 +86,7 @@
     </div>
 </header>
     <section>
-        <div class="top">
+        <div class="top" id="bg">
             <div class="left">
                 <canvas class="canvas_1" id="canvas_1"></canvas>
                 <div class="discript">
@@ -99,8 +97,7 @@
                 </div>
             </div>
             <div class="right" id="right">
-                <img src="../img/myHomePage_bg.jpeg" alt="" id="bg_img"/>
-                <div id="tuodong"></div>
+                <canvas class="canvas_2" id="canvas_2"></canvas>
             </div>
             <a href="#" id="xiugai">修改封面</a>
             <form action="#" method="get" id="form">
@@ -110,11 +107,11 @@
         <div class="section_1">
             <div class="list" id="select">
                 <ul>
-                    <li class="click"><a href="javascript:void(0)">专辑&nbsp;2</a></li>
-                    <li class="click"><a href="javascript:void(0)">收藏&nbsp;1</a></li>
-                    <li class="click"><a href="javascript:void(0)">收集&nbsp;314</a></li>
-                    <li class="click"><a href="javascript:void(0)">发布&nbsp;2</a></li>
-                    <li><a href="guanzhu.html">关注&nbsp;13</a></li>
+                    <li><a href="#" class="click">专辑&nbsp;2</a></li>
+                    <li><a href="#" class="click">收藏&nbsp;1</a></li>
+                    <li><a href="#" class="click">收集&nbsp;314</a></li>
+                    <li><a href="#" class="click">发布&nbsp;2</a></li>
+                    <li><a href="guanzhu.html" target="_blank">关注&nbsp;13</a></li>
                     <li><a href="#">粉丝&nbsp;2</a></li>
                 </ul>
                 <div class="bottom" id="bottom" style="left: 337px"></div>
@@ -127,7 +124,571 @@
                 </form>
             </div>
         </div>
-        <iframe src="iframe_1.html" frameborder="0" id="iframe"></iframe>
+        <div id="li_1" class="li_1">
+            <div class="create">
+                <img src="../img/create.png" alt=""/>
+                <p>创建专辑</p>
+            </div>
+            <div class="zhuanji">
+                <a href="#"><img src="../img/myHome_zhuanji/zhuanji_1.jpeg" alt=""/></a>
+                <a href="#" class="shadow"></a>
+                <div class="bottom">
+                    <a href="#">默认专辑</a>
+                    <p class="title">3张图片 <b>·</b> 0人收藏</p>
+                </div>
+                <div class="bottom_l1"></div>
+                <div class="bottom_l2"></div>
+            </div>
+            <div class="zhuanji">
+                <a href="#"><img src="../img/myHome_zhuanji/zhuanji_2.jpeg" alt=""/></a>
+                <a href="#" class="shadow"></a>
+                <div class="bottom">
+                    <a href="#">清新壁纸</a>
+                    <p class="title">311张图片 <b>·</b> 2人收藏</p>
+                </div>
+                <div class="bottom_l1"></div>
+                <div class="bottom_l2"></div>
+            </div>
+        </div>
+        <div id="li_2" class="li_2">
+            <div class="shoucang">
+                <a href="#"><img src="../img/myHome_shoucang/shoucang_1.jpeg" alt=""/></a>
+                <a href="#" class="shadow"></a>
+                <div class="bottom">
+                    <a href="#">巴黎是场流动的宴席</a>
+                    <p class="title">47张图片 <b>·</b> 1607人收藏</p>
+                    <p class="author">by <a  href="#">小墨与阿猴</a></p>
+                </div>
+                <div class="bottom_l1"></div>
+                <div class="bottom_l2"></div>
+            </div>
+        </div>
+        <div id="li_3" class="li_3">
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_1.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_2.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_3.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_4.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_5.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_6.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_7.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_8.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_9.jpg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_10.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_11.jpg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_12.jpg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_13.jpg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_14.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_15.jpg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_16.jpg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_17.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_18.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_19.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_20.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_21.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_22.jpg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_23.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_24.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="message">
+                            <span class="shoucang">91</span>
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="li_4" class="li_4">
+            <div class="box">
+                <div class="in_box">
+                    <a href="#" class="tupian"><img src="../img/myHome_shouji/shouji_1.jpeg" alt=""/></a>
+                    <div class="bottom">
+                        <div class="juzi">
+                            摄影
+                        </div>
+                        <div class="people">
+                            <a href="#" class="touxiang"><img src="../img/touxiang_small.jpeg" alt=""/></a>
+                            <p class="jieshao">
+                                <a href="#">玖兰爱</a>
+                                <br/>
+                                <span>收集到</span>&nbsp;&nbsp;<a href="#">默认专辑</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

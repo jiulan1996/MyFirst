@@ -28,16 +28,15 @@ section .top .left{
     float: left;
     width: 40%;
     height: 100%;
-    background: url("../img/myHomePage_bg_1.jpeg");
 }
 section .top .canvas_1{
     position: absolute;
-    width: 146%;
-    height: 143%;
-    top:-65px;
-    left: -113px;
-    border: 1px solid red;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: url("../img/lunbo_1.jpeg");
 }
+
 section .top .left .discript{
     width: 23.5%;
     height: 100%;
@@ -98,18 +97,11 @@ section .top .right{
     height: 100%;
     overflow: hidden;
 }
-section .top .right>img{
-    display: block;
-    width: 100%;
-}
-section .top .right>#tuodong{
+section .top .right>.canvas_2{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    /*border: 1px solid red;*/
-    cursor: move;
+    cursor: default;
 }
 section .top>a{
     position: absolute;
@@ -125,9 +117,6 @@ section .top>a{
     color: white;
     text-align: center;
 }
-section .top:hover>a{
-    display: block;
-}
 section .top>form{
     position: absolute;
     right: 20px;
@@ -137,8 +126,12 @@ section .top>form{
     opacity: 0;
 }
 section .top>form>input{
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    font-size: 0;
 }
 section .section_1{
     position: relative;
@@ -146,9 +139,6 @@ section .section_1{
     border: 1px solid #dedfe0;
     border-top: none;
     width: 99.9%;
-}
-section .section_1 .list{
-     display: none;
 }
 section .section_1 ul{
     width: 540px;
@@ -180,13 +170,12 @@ section .section_1 ul li a{
 section .section_1 .bottom{
     position: absolute;
     bottom: 0;
-    /*left: 337px;*/
     width: 90px;
     height: 3px;
     background: #DEDFE0;
 }
 section .section_1 .shezhi{
-    /*display: none;*/
+    display: none;
     height: 60px;
     position: relative;
 }
@@ -242,21 +231,4 @@ section .section_1 .shezhi>form>.button_2{
 }
 section .section_1 .shezhi>form>.button_2:hover{
     background: #4C9ED9;
-}
-section iframe{
-    width: 103%;
-    margin-top: 40px;
-    height: auto;
-    /*border: 1px solid red;*/
-}
-.box{
-    padding-left: 20px;
-    padding-bottom: 20px;
-    float: left;
-    position: relative;
-    width: 224px;
-}
-.box .in_box{
-    border-top: 1px solid #dedfe0;
-    background: white;
 }

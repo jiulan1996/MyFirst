@@ -7,10 +7,23 @@
 a{
     text-decoration: none;
 }
-::-webkit-scrollbar{
-    width: 0;
+.section_1{
+    position: relative;
+    overflow: hidden;
 }
-header{
+.section_1 .bg{
+    position: absolute;
+    left:0px;
+    top: -30px;
+    width: 100%;
+    height: 110%;
+}
+.section_1 .bg img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.section_1 .header{
     position: absolute;
     z-index: 10;
     top: 0;
@@ -18,29 +31,29 @@ header{
     width: 100%;
     background: rgba(255,255,255,.9);
 }
-header .inner{
+.section_1 .header .inner{
     width: 88%;
     /*border: 1px solid red;*/
     margin: 0 auto;
 }
-header .inner:before{
+.section_1 .header .inner:before{
     content: '';
     display: block;
     clear: both;
 }
-header .inner:after{
+.section_1 .header .inner:after{
     content: '';
     display: block;
     clear: both;
 }
-header .inner .logo{
+.section_1 .header .inner .logo{
     display: block;
     float: left;
     width: 80px;
     height: 64px;
     background: url("../img/logo.png") 0 12px no-repeat;
 }
-header .inner .myHome{
+.section_1 .header .inner .myHome{
     display: block;
     float: right;
     width: 125px;
@@ -50,7 +63,7 @@ header .inner .myHome{
     font-size: 13px;
     color: #444;
 }
-header .inner .myHome>img{
+.section_1 .header .inner .myHome>img{
     display: inline-block;
     width: 36px;
     height: 36px;
@@ -59,31 +72,25 @@ header .inner .myHome>img{
     border-radius: 50%;
     vertical-align: top;
 }
-.page_1{
-    position: relative;
-    width: 100%;
-    background: url("../img/home_1.png") 0 -30px no-repeat;
-    background-size: cover;
-}
-.page_1 .content{
+.section_1 .content{
     position: absolute;
     width: 100%;
     top: 20%;
     text-align: center;
 }
-.page_1 .content .title_1,.page_4 .content .title_1{
+.section_1 .content .title_1,.section_4 .content .title_1{
     font-size: 45px;
     font-weight: 400;
     padding-top: 44px;
     padding-bottom: 11px;
 }
-.page_1 .content .title_2,.page_4 .content .title_2{
+.section_1 .content .title_2,.section_4 .content .title_2{
     font-size: 26px;
     font-weight: 300;
     color: #777;
     padding-bottom: 50px;
 }
-.page_1 .content .button,.page_4 .content .button{
+.section_1 .content .button,.section_4 .content .button{
     display: block;
     margin: 0 auto;
     width: 220px;
@@ -94,103 +101,105 @@ header .inner .myHome>img{
     border-radius: 100px;
     background: #ff7d7c;
 }
-.page_2{
-    position: relative;
-    width: 100%;
-    background: #FFFDF8;
-}
-.page_2 .content{
+.section_2{
+     position: relative;
+     overflow: hidden;
+ }
+.section_2 .img_2{
     position: absolute;
-    top: 20%;
-    left: 8%;
-    width: 88%;
-    height: 459px;
-
-}
-.page_2 .content .img{
-    position: absolute;
-    bottom: -50px;
+    left: 107px;
+    bottom: 80px;
     opacity: 0;
-    float: left;
-    width: 58%;
-    height: 100%;
+    width: 683px;
+    height: 459px;
     background: url("../img/home_2.png") no-repeat;
     background-size: cover;
-    transition: 0.7s ease-out all 0.5s;
+    transition: all 1.3s;
 }
-.page_2 .content .article{
-    float: right;
-    width: 40%;
-    height: 100%;
-    box-sizing: border-box;
-    padding-top: 54px;
-    padding-left: 10px;
+.section_2 .article{
+    position: absolute;
+    right: 213px;
+    top: 160px;
     opacity: 0;
-    transition: 0.7s ease-out all 1s;
+    transition: all 0.7s;
 }
-.page_2 .content .article .line,.page_3 .content .article .line{
+.section_2 .article .line,.section_3 .article .line{
     width: 42px;
     height: 2px;
     background: #000;
 }
-.page_2 .content .article .title,.page_3 .content .article .title{
+.section_2 .article .title,.section_3 .article .title{
     font-size: 24px;
     font-weight: 500;
     padding: 20px 0 40px;
 }
-.page_2 .content .article .word,.page_3 .content .article .word{
+.section_2 .article .word,.section_3 .article .word{
     font-weight: 400;
     line-height: 32px;
 }
-.page_3{
+.active .img_2{
+    bottom: 135px;
+    opacity: 1;
+    transition-delay: 0.7s;
+}
+.section_3{
     position: relative;
-    width: 100%;
-    background: #FFFDF8;
+    z-index: 10;
+    overflow: hidden;
 }
-.page_3 .content{
+.section_3 .img_3{
     position: absolute;
-    top: 10%;
-    left: 15%;
-    width: 72%;
-    height: 503px;
-    box-sizing: border-box;
-    padding-left: 50px;
-}
-.page_3 .content .img{
-    position: absolute;
-    bottom: -50px;
+    left: 245px;
+    bottom: 0px;
     opacity: 0;
-    float: left;
-    width: 45%;
-    height: 100%;
+    width: 410px;
+    height: 520px;
     background: url("../img/home_3.png") no-repeat;
-    background-size: cover;
-    transition: 0.7s ease-out all 0.5s;
+    background-size: contain;
+    transition: all 1.3s;
 }
-.page_3 .content .article{
-    float: right;
-    width: 40%;
-    height: 100%;
-    box-sizing: border-box;
-    padding-top: 120px;
+.section_3 .article{
+    position: absolute;
+    right: 213px;
+    top: 200px;
     opacity: 0;
-    transition: 0.7s ease-out all 1s;
+    transition: all 0.7s;
 }
-.page_4{
+.active .img_3{
+    bottom: 75px;
+    opacity: 1;
+    transition-delay: 0.7s;
+}
+.active .article{
+    opacity: 1;
+    transition-delay: 1.4s;
+}
+.section_4{
     position: relative;
-    /*visibility: hidden;*/
-    width: 100%;
-    background: url("../img/home_4.png") no-repeat;
-    background-size: cover;
+    overflow: hidden;
 }
-.page_4 .content{
+.section_4 .bg{
+    position: absolute;
+    left:0px;
+    top: -30px;
+    width: 100%;
+    height: 110%;
+}
+.section_4 .bg img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.section_4 .content{
     position: absolute;
     width: 100%;
-    top: 30%;
+    top: 25%;
     text-align: center;
 }
 .next{
-    position: fixed;
+    position: absolute;
+    display: block;
+    opacity: 0;
     bottom: 60px;
     left: 50%;
     margin-left: -20px;
@@ -200,6 +209,7 @@ header .inner .myHome>img{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
+    transition: all 1s;
 }
 .next>img{
     width: 100%;
@@ -210,7 +220,7 @@ header .inner .myHome>img{
         opacity: 0;
         bottom: 60px;
     }
-    80%{
+    90%{
         opacity: 1;
         bottom: 44px;
     }
@@ -219,55 +229,7 @@ header .inner .myHome>img{
         bottom: 41px;
     }
 }
-.yuandian{
-    width: 28px;
-    height: 140px;
-    position: fixed;
-    right: 50px;
-    top: 50%;
-    /*border: 1px solid blue;*/
-}
-.yuandian ul{
-    margin-bottom: 30px;
-}
-.yuandian ul li{
-    position: relative;
-    list-style: none;
-    width: 14px;
-    height: 13px;
-    margin: 7px;
-    cursor: pointer;
-    /*border: 1px solid red;*/
-}
-.yuandian ul li span{
-    position: absolute;
-    top: 50%;
-    margin-top: -2px;
-    left: 50%;
-    margin-left: -2px;
-    display: block;
-    height: 4px;
-    width: 4px;
-    background: #d8d8d8;
-    border-radius: 50%;
-    /*border: 1px solid black;*/
-}
-.yuandian ul li:first-child span{
-    background: #ff7d7c;
-    width: 12px;
-    height: 12px;
-    margin-left: -6px;
-    margin-top: -6px;
-}
-.yuandian ul li span:hover{
-    width: 11px;
-    height: 11px;
-    margin-top: -5px;
-    margin-left: -5px;
-    transition: 0.3s ease-out all;
-}
-.yuandian>img{
-    margin-left: 1.5px;
-    width: 25px;
-    height: 25px;
+.active .next{
+    opacity: 1;
+    transition-delay: 0.7s;
 }

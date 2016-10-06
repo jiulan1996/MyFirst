@@ -1,0 +1,285 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑;
+}
+a{
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    border-bottom: 1px solid #e3e3e3;
+    background: white;
+}
+header .content{
+    width: 90%;
+    margin: 0 auto;
+}
+header .content .logo{
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    width: 160px;
+    height: 64px;
+    padding-top: 18px;
+}
+header .content .button{
+    float: right;
+    height: 64px;
+}
+header .content .button a{
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+    margin-right: 30px;
+    margin-top: 25px;
+    vertical-align: top;
+}
+header .content .button a:last-child{
+    margin-right: 0;
+    margin-top: 15px;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    background: #fc8383;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+}
+header .content .button a i{
+    display: inline-block;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/artical/icon.png");
+    vertical-align: middle;
+}
+header .content .button .button_1>i{
+    background-position: -210px -164px;
+}
+header .content .button .button_2>i{
+    background-position: -210px -116px;
+}
+header .content .button .button_1:hover,header .content .button .button_2:hover{
+    color: #fc9595;
+}
+header .content .button .button_2:hover i{
+    background-position: -148px -226px;
+}
+header .content .button .button_1:hover i{
+    background-position: -170px -124px;
+}
+header .content .button .button_3:hover{
+    background-color: #fc9595;
+}
+.artical{
+    position: relative;
+    border: 1px solid red;
+    margin-top: 65px;
+    padding-top: 20px;
+}
+.artical .context{
+    width: 52%;
+    margin: 0 auto;
+    border: 1px solid blue;
+    position: relative;
+}
+.artical .context .img_shangchuan{
+    width: 100%;
+    height: 180px;
+    background: #FAFAFA;
+    position: relative;
+    /*display: none;*/
+}
+.artical .context .img_shangchuan .tip{
+    position: absolute;
+    top: 64px;
+    width: 100%;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    line-height: 18px;
+}
+.artical .context .img_shangchuan .tip>i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/artical/camera.png");
+}
+.artical .context .img_shangchuan>input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 0;
+    opacity: 0;
+}
+.artical .context .img{
+    display: none;
+    width: 100%;
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+}
+.artical .context .img>img{
+    width: 100%;
+}
+.artical .context .img_shangchuan:hover{
+    background: #EEEEEE;
+}
+.artical .context>textarea{
+    width: 100%;
+    height: 42px;
+    padding: 28px 0;
+    font-size: 30px;
+    outline: none;
+    border: 0;
+    resize: none;
+    line-height: 42px;
+}
+.artical .context .toolbar{
+    position: relative;
+    width: 100%;
+    border-top: 2px solid #e3e3e3;
+    padding: 13px 0;
+    list-style: none;
+}
+.artical .context .toolbar:before,.artical .context .toolbar:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.artical .context .toolbar>li{
+    position: relative;
+    float: left;
+    height: 30px;
+    color: #AAAAAA;
+    box-sizing: border-box;
+}
+.artical .context .toolbar li:not(:last-child):after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    background: #d9d9d9;
+}
+.artical .context .toolbar>li>button{
+    background: white;
+    color: #AAAAAA;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.artical .context .toolbar>li>button:first-child{
+    margin-left: 3px;
+}
+.artical .context .toolbar>li>button:last-child{
+    margin-right: 3px;
+}
+.artical .context .toolbar>li>button:hover{
+    background: #FAFAFA;
+}
+.artical .context .toolbar>li>button:hover i{
+    color: #666;
+}
+.artical .context .toolbar .li1>button{
+    width: 63px;
+    height: 100%;
+    font-size: 13px;
+
+}
+.artical .context .toolbar .li1>button>i{
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    vertical-align: top;
+    margin-top: 8px;
+    margin-left: 5px;
+    border-top: 4px solid #AAAAAA;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+}
+.artical .context .toolbar .li1>.select{
+    position: absolute;
+    top: 100%;
+    background: white;
+    width: 66px;
+    border: 1px solid;
+}
+.artical .context .toolbar .li2>button,.li3>button,.li4>button,.li6>button,.li7>button{
+    width: 34px;
+    height: 100%;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font-icon/li_2/iconfont.eot'); /* IE9*/
+    src: url('../font-icon/li_2/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font-icon/li_2/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font-icon/li_2/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font-icon/li_2/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.font_1{
+    color: #AAAAAA;
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.cuti>.font_1,.xiangmu>.font_1,.shanchu>.font_1{
+    font-size:21px;
+}
+.xieti>.font_1{
+    font-size:19px;
+}
+.xiahua>.font_1{
+    font-size:20px;
+}
+.left>.font_1,.center>.font_1,.right>.font_1{
+    font-size: 20px;
+}
+.fenge>.font_1,.lianjie>.font_1{
+    font-size: 16px;
+}
+.tupian>.font_1,.yinyue>.font_1,.toupiao>.font_1,.mingpian>.font_1{
+    font-size: 18px;
+}
+.yanse>.font_1{
+    font-size: 14px;
+}
+.artical .context .toolbar .li5>.yanse{
+    width: 34px;
+    height: 100%;
+    border-right: 1px solid #F5F5F5;
+}
+.artical .context .toolbar .li5>.xiangxia{
+    width: 27px;
+    height: 30px;
+}
+.artical .context .toolbar .li5>.xiangxia>i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    border-top: 4px solid #AAAAAA;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+}
+.artical .context .content{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border: 1px solid black;
+    font-size: 15px;
+}

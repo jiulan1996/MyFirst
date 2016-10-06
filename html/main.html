@@ -14,8 +14,8 @@
     <script type="text/javascript" src="../js/float.js"></script>
     <script type="text/javascript" src="../js/上传图片.js"></script>
     <script type="text/javascript" src="../js/创建专辑.js"></script>
+    <script type="text/javascript" src="../js/JQuery/jquery-3.1.0.min.js"></script>
     <base target="_blank"/>
-</head>
 <body>
     <header>
         <div class="top">
@@ -60,7 +60,7 @@
                     <div class="span" id="jia">
                         <span></span>
                         <div class="tool" id="tool">
-                            <a href="javascript:void(0)" class="p1" onclick="upImg()"><i></i>上传图片</a>
+                            <a href="javascript:void(0)" class="p1" onclick="upImg(event)"><i></i>上传图片</a>
                             <a href="#" class="p2"><i></i>抓取网页图片</a>
                             <a href="javascript:void(0)" class="p3" onclick="Create()"><i></i>创建专辑</a>
                         </div>
@@ -328,7 +328,7 @@
         <div class="pubu" id="pubu">
             <div class="box" id="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_1.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_1.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -351,7 +351,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_2.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_2.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -374,7 +374,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_3.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_3.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -397,7 +397,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_4.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_4.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -420,7 +420,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_5.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_5.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -443,7 +443,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_6.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_6.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -466,7 +466,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_7.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_7.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -489,7 +489,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_8.jpg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_8.jpg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -512,7 +512,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_9.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_9.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -535,7 +535,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_10.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_10.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -558,7 +558,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_11.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_11.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -581,7 +581,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_12.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_12.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -604,7 +604,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_13.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_13.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -627,7 +627,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_14.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_14.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -650,7 +650,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_15.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_15.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -673,7 +673,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_16.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_16.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -696,7 +696,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_17.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_17.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -719,7 +719,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_18.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_18.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -742,7 +742,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_19.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_19.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -765,7 +765,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_20.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_20.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -788,7 +788,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_21.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_21.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -811,7 +811,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_22.jpg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_22.jpg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -834,7 +834,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_23.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_23.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -857,7 +857,7 @@
             </div>
             <div class="box">
                 <div class="in_box">
-                    <a href="#" class="tupian"><img src="../img/pubu/pubu_24.jpeg" alt=""/></a>
+                    <a href="#" class="tupian"><img class="lazy" src="../img/pubu/pubu_24.jpeg" alt=""/></a>
                     <div class="bottom">
                         <div class="juzi">
                             2016秋季小清新宽松长袖字母图案连帽卫衣女打底上衣薄外套
@@ -880,7 +880,7 @@
             </div>
         </div>
         <div class="more">
-            <a href="javascript:void(0)" id="more">浏览更多 &gt;</a>
+            <a href="javascript:void(0);" id="more">浏览更多 &gt;</a>
         </div>
     </section>
     <footer>

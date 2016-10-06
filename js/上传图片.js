@@ -1,7 +1,8 @@
 /**
  * Created by s on 2016/9/7.
  */
-function upImg(){
+function upImg(event){
+    event.preventDefault();
     var upImg=document.getElementById('upImg');
     var box=document.getElementById('box_first');
     var button=document.getElementById('button');

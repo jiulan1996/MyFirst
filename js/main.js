@@ -11,6 +11,7 @@ window.onload=function(){
     var lunbo=new Lunbo();
     lunbo.active();
 
-    pubugo();
     float();
+
+    pubu();
 }
