@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <link rel="icon" href="../img/favicon.ico"/>
     <title>堆糖生活家</title>
-    <link rel="stylesheet" href="../css/liveHome_artical.css"/>
+    <link rel="stylesheet" href="../css/artical/liveHome_artical.css"/>
+    <!--<link rel="stylesheet" href="../css/artical/bootstrap.min.css"/>-->
     <script type="text/javascript" src="../js/liveHome_artical.js"></script>
+    <!--<script type="text/javascript" src="../js/artical_fabu/jQuery.min.js"></script>
+    <script type="text/javascript" src="../js/artical_fabu/bootstrap.min.js"></script>-->
 </head>
 <body>
 <header>
@@ -31,35 +34,49 @@
         <textarea name="title" id="tltle" maxlength="30" placeholder="在此输入标题"></textarea>
         <ul class="toolbar" id="toolbar">
             <li class="li1">
-                <button><span>15px</span><i></i></button>
-                <ul class="select">
+                <a href="#" class="buttons"><span>15px</span><i></i><span class="tooltip">字号</span></a>
+                <!--<ul class="select">
                     <li>12px</li>
                     <li>15px</li>
                     <li>17px</li>
                     <li>20px</li>
-                </ul>
+                </ul>-->
             </li>
             <li class="li2">
-                <button class="cuti"><i class="font_1">&#xe606;</i></button><button class="xieti"><i class="font_1">&#xe731;</i></button><button class="xiahua"><i class="font_1">&#xe76f;</i></button><button class="shanchu"><i class="font_1">&#xe67d;</i></button>
+                <a href="#" class="buttons cuti"><i class="font_1">&#xe606;</i><span class="tooltip">粗体</span></a>
+                <a href="#" class="buttons xieti"><i class="font_1">&#xe731;</i><span class="tooltip">斜体</span></a>
+                <a href="#" class="buttons xiahua"><i class="font_1">&#xe76f;</i><span class="tooltip">下划线</span></a>
+                <a href="#" class="buttons shanchu"><i class="font_1">&#xe67d;</i><span class="tooltip">删除线</span></a>
             </li>
             <li class="li3">
-                <button class="xiangmu"><i class="font_1">&#xe75f;</i></button>
+                <a href="#" class="buttons xiangmu"><i class="font_1">&#xe75f;</i><span class="tooltip">项目符号</span></a>
             </li>
             <li class="li4">
-                <button class="left"><i class="font_1">&#xe782;</i></button><button class="center"><i class="font_1">&#xe76b;</i></button><button class="right"><i class="font_1">&#xe780;</i></button>
+                <a href="#" class="buttons left"><i class="font_1">&#xe782;</i><span class="tooltip">左对齐</span></a>
+                <a href="#" class="buttons center"><i class="font_1">&#xe76b;</i><span class="tooltip">居中</span></a>
+                <a href="#" class="buttons right"><i class="font_1">&#xe780;</i><span class="tooltip">右对齐</span></a>
             </li>
-            <li class="li5">
-                <button class="yanse"><i class="font_1">&#xe63c;</i></button><button class="xiangxia"><i></i></button>
+            <li class="buttons li5">
+                <a href="#" class="yanse"><i class="font_1">&#xe63c;</i><i class="xiangxia"></i></a>
+                <span class="tooltip">右对齐</span>
             </li>
             <li class="li6">
-                <button class="fenge"><i class="font_1">&#xe617;</i></button><button class="lianjie"><i class="font_1">&#xf008e;</i></button>
+                <a href="#" class="buttons fenge"><i class="font_1">&#xe617;</i><span class="tooltip">水平分割线</span></a>
+                <a href="#" class="buttons lianjie"><i class="font_1">&#xf008e;</i><span class="tooltip">插入/编辑链接</span></a>
             </li>
             <li class="li7">
-                <button class="tupian"><i class="font_1">&#x3446;</i></button><button class="yinyue"><i class="font_1">&#xf0066;</i></button><button class="toupiao"><i class="font_1">&#xe619;</i></button><button class="mingpian"><i class="font_1">&#xe61d;</i></button>
+                <a href="#" class="buttons tupian"><i class="font_1">&#x3446;</i><span class="tooltip">插入图片</span></a>
+                <a href="#" class="buttons yinyue"><i class="font_1">&#xf0066;</i><span class="tooltip">插入音乐</span></a>
+                <a href="#" class="buttons toupiao"><i class="font_1">&#xe619;</i><span class="tooltip">投票</span></a>
+                <a href="#" class="buttons mingpian"><i class="font_1">&#xe61d;</i><span class="tooltip">名片</span></a>
             </li>
         </ul>
-        <textarea class="content"></textarea>
+        <div class="content" id="editor">
+            <p style="width: 100%;height: 30px"></p>
+        </div>
     </div>
 </section>
 </body>
+<script>
+</script>
 </html>

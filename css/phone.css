@@ -1,0 +1,220 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微软雅黑;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    background: white;
+    min-width: 360px;
+}
+header .header{
+    width: 95%;
+    margin: 0 auto;
+    padding: 9px 0 6px;
+}
+header .header img{
+    display: inline-block;
+    width: 158px;
+    height: 50px;
+}
+header .header>a{
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin-top: 10px;
+    width: 81px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 3px;
+}
+header .header .app{
+    border: 1px solid #f25555;
+    color: #f25555;
+    width: 79px;
+    height: 30px;
+}
+header .header .download{
+    background: #f25555;
+    color: white;
+    margin-left: 10px;
+}
+section .lunbo{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+section .lunbo .content{
+    width: 500%;
+}
+section .lunbo .content:before,section .lunbo .content:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+section .lunbo .content li{
+    width: 20%;
+    float: left;
+    list-style: none;
+}
+section .lunbo .content li a{
+    display: block;
+    width: 100%;
+    height: 200px;
+    /*border: 1px solid red;*/
+}
+section .lunbo .content li a img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+section .lunbo .top{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid red;*/
+}
+section .lunbo .bottom{
+    width: 100%;
+    height: 23px;
+    background: #CDCCCC;
+}
+section .nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+section .nav>div{
+    width: 24.7%;
+    height: 90px;
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+section .nav>.div_1,.div_2,.div_3,.div_5,.div_6,.div_7{
+    border-right: 1px solid #e0e0e0;
+}
+section .nav>div>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20% 0;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}
+section .nav>div>a>i{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url("../img/phone/nav.png");
+    background-size: cover;
+}
+section .nav>.div_2>a>i{
+    background-position: -36px 0;
+}
+section .nav>.div_3>a>i{
+    background-position: -72px 0;
+}
+section .nav>.div_4>a>i{
+    background-position: -108px 0;
+}
+section .nav>.div_5>a>i{
+    background-position: -144px 0;
+}
+section .nav>.div_6>a>i{
+    background-position: -180px 0;
+}
+section .nav>.div_7>a>i{
+    background-position: -216px 0;
+}
+section .nav>.div_8>a>i{
+    background-position: -252px 0;
+}
+section .pubu{
+    background: #F2F2F2;
+    width: 100%;
+    padding-top: 12px;
+}
+section .pubu .content{
+    width: 97%;
+    /*border: 1px solid red;*/
+}
+section .pubu .content:before,section .pubu .content:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+section .pubu .content .box{
+    padding: 0 0 14px 14px;
+    width: 160px;
+    float: left;
+    font-size: 12px;
+}
+section .pubu .content .box>.img{
+    display: block;
+    width: 100%;
+    background: white;
+}
+section .pubu .content .box>.img>a{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+}
+section .pubu .content .box>.img img{
+    width: 100%;
+    max-height: 351px;
+    display: block;
+    margin: 0 auto;
+}
+section .pubu .content .box>.img .discript{
+    padding: 8px 8px 5px;
+    color: #333;
+}
+section .pubu .content .box>.img .zan{
+    padding: 0 8px 5px;
+    color: #999;
+}
+section .pubu .content .box>.img>.author{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+section .pubu .content .box>.img>.author:before{
+    content: "";
+    display: block;
+    clear: both;
+}
+section .pubu .content .box>.img>.author:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+section .pubu .content .box>.img>.author>img{
+    display: block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+section .pubu .content .box>.img>.author>p{
+    margin-left: 10px;
+    float: left;
+    line-height: 1.5;
+}
+section .pubu .content .box>.img>.author>p span:first-child{
+    color: #3498db;
+}

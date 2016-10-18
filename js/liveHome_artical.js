@@ -7,10 +7,7 @@ window.onload=function(){
     var file=document.getElementById("file");
     var img_box=document.getElementById("img")
     var img=img_box.getElementsByTagName("img")[0];
-
-    //段落样式
-    var buttons=document.getElementById("toolbar").getElementsByTagName("li");
-
+    /*添加图片*/
     file.onclick=function(){
         //debugger;
         var oFReader;
@@ -31,7 +28,28 @@ window.onload=function(){
         })
     }
 
-    buttons[0].onclick=function(){
 
+    /*提示气泡*/
+    var tooltip=document.getElementsByClassName("tooltip");
+    var buttons=document.getElementsByClassName("buttons");
+    for(var i=0;i<tooltip.length;i++){
+        //debugger;
+        buttons[i].index=i;
+        buttons[i].onmouseover=function(){
+            tooltip[this.index].style.display="block";
+            tooltip[this.index].style.marginLeft="-"+(tooltip[this.index].offsetWidth)/2+"px";
+        }
+        buttons[i].onmouseout=function(){
+            tooltip[this.index].style.display="none";
+        }
+    }
+
+
+    /*文本样式*/
+    var artical=document.getElementById("editor");
+    artical.onmouseup=function(){
+        var selectedTextArea = document.activeElement;
+        //var selection = selectedTextArea.value.substring(selectedTextArea.selectionStart, selectedTextArea.selectionEnd);
+        console.log(selectedTextArea);
     }
 }

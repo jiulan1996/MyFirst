@@ -57,7 +57,7 @@ header .content .button a i{
     margin-right: 10px;
     width: 16px;
     height: 16px;
-    background: url("../img/artical/icon.png");
+    background: url("../../img/artical/icon.png");
     vertical-align: middle;
 }
 header .content .button .button_1>i{
@@ -110,7 +110,7 @@ header .content .button .button_3:hover{
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: url("../img/artical/camera.png");
+    background: url("../../img/artical/camera.png");
 }
 .artical .context .img_shangchuan>input{
     position: absolute;
@@ -174,37 +174,66 @@ header .content .button .button_3:hover{
     height: 20px;
     background: #d9d9d9;
 }
-.artical .context .toolbar>li>button{
+.artical .context .toolbar>li>a{
+    position: relative;
+    display: block;
+    float: left;
+    text-decoration: none;
     background: white;
     color: #AAAAAA;
     outline: none;
     border: none;
     cursor: pointer;
+    text-align: center;
+    line-height: 30px;
 }
-.artical .context .toolbar>li>button:first-child{
+.artical .context .toolbar>li>a:first-child{
     margin-left: 3px;
 }
-.artical .context .toolbar>li>button:last-child{
+.artical .context .toolbar>li .tooltip{
+    position: absolute;
+    display: none;
+    top: 34px;
+    left: 50%;
+    white-space: nowrap;
+    background: #333;
+    color: white;
+    font-size: 8px;
+    line-height: 28px;
+    padding: 0 8px;
+}
+.artical .context .toolbar>li .tooltip:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    margin-left: -4px;
+    border-bottom: 4px solid #333;
+    border-right: 4px solid white;
+    border-left: 4px solid white;
+}
+.artical .context .toolbar>li>a:last-child{
     margin-right: 3px;
 }
-.artical .context .toolbar>li>button:hover{
+.artical .context .toolbar>li>a:hover{
     background: #FAFAFA;
 }
-.artical .context .toolbar>li>button:hover i{
+.artical .context .toolbar>li>a:hover i{
     color: #666;
 }
-.artical .context .toolbar .li1>button{
+.artical .context .toolbar .li1>a{
     width: 63px;
     height: 100%;
     font-size: 13px;
 
 }
-.artical .context .toolbar .li1>button>i{
+.artical .context .toolbar .li1>a>i{
     display: inline-block;
     width: 0px;
     height: 0px;
     vertical-align: top;
-    margin-top: 8px;
+    margin-top: 13px;
     margin-left: 5px;
     border-top: 4px solid #AAAAAA;
     border-left: 4px solid white;
@@ -217,17 +246,17 @@ header .content .button .button_3:hover{
     width: 66px;
     border: 1px solid;
 }
-.artical .context .toolbar .li2>button,.li3>button,.li4>button,.li6>button,.li7>button{
+.artical .context .toolbar .li2>a,.li3>a,.li4>a,.li6>a,.li7>a{
     width: 34px;
     height: 100%;
 }
 @font-face {
     font-family: 'iconfont';
-    src: url('../font-icon/li_2/iconfont.eot'); /* IE9*/
-    src: url('../font-icon/li_2/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../font-icon/li_2/iconfont.woff') format('woff'), /* chrome、firefox */
-    url('../font-icon/li_2/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('../font-icon/li_2/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+    src: url('../../font-icon/li_2/iconfont.eot'); /* IE9*/
+    src: url('../../font-icon/li_2/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../font-icon/li_2/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../../font-icon/li_2/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../../font-icon/li_2/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 .font_1{
     color: #AAAAAA;
@@ -257,24 +286,28 @@ header .content .button .button_3:hover{
 }
 .yanse>.font_1{
     font-size: 14px;
+    float: left;
+    display: block;
+    width: 32px;
 }
 .artical .context .toolbar .li5>.yanse{
-    width: 34px;
+    width: 62px;
     height: 100%;
-    border-right: 1px solid #F5F5F5;
 }
-.artical .context .toolbar .li5>.xiangxia{
-    width: 27px;
-    height: 30px;
-}
-.artical .context .toolbar .li5>.xiangxia>i{
+.artical .context .toolbar .li5>.yanse>.xiangxia{
+    position: absolute;
     display: inline-block;
-    vertical-align: middle;
+    /*float: left;*/
     width: 0;
     height: 0;
     border-top: 4px solid #AAAAAA;
     border-left: 4px solid white;
     border-right: 4px solid white;
+    right: 10px;
+    top: 12px;
+}
+.artical .context .toolbar .li5:hover .yanse>.font_1{
+    border-right: 1px solid #E3E3E3;
 }
 .artical .context .content{
     width: 100%;
@@ -282,4 +315,5 @@ header .content .button .button_3:hover{
     padding: 0;
     border: 1px solid black;
     font-size: 15px;
+    min-height: 540px;
 }
